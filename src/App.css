@@ -1,38 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toolbox {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-search {
+  font-size: 18px;
+}
+
+.add {
+  padding: 8px;
+  background-color: rgb(20, 201, 20);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.add:hover, .update:hover, .delete:hover {
+  opacity: 0.8;
+}
+.input-search{
+
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+}
+
+.list-staff {
+  margin-top: 48px;
+}
+
+.staff {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #999;
+}
+
+.staff + .staff {
+  margin-top: 16px;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 14px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.action {
+  display: flex;
+  gap: 8px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.update {
+  padding: 8px;
+  background-color: rgb(19 135 251);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete {
+  padding: 8px;
+  background-color: rgb(214, 39, 39);
+  cursor: pointer;
+  border-radius: 5px;
 }
